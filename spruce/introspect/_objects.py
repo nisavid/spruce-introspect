@@ -8,7 +8,7 @@ import __builtin__
 from functools import wraps as _wraps
 from importlib import import_module as _import_module
 
-from nisavid.pprint import split_blocks as _split_blocks
+from spruce.pprint import split_blocks as _split_blocks
 
 from . import _exc
 from . import _imp as _intro_imp
@@ -104,8 +104,8 @@ class Object(object):
     This class provides generic introspection capabilities that apply to
     most or all Python objects.  For subclasses that provide additional
     functions specific to particular object types, see
-    :class:`~nisavid.introspect._modules.Module` and
-    :class:`~nisavid.introspect._modules.Package`.
+    :class:`~spruce.introspect._modules.Module` and
+    :class:`~spruce.introspect._modules.Package`.
 
     Some of this class's methods entail loading the represented object.
     If a *load_tree_filepath* is passed to the constructor, or if
@@ -187,7 +187,7 @@ class Object(object):
         :raise ImportError:
             Raised if this object is a module but cannot be imported.
 
-        :raise nisavid.introspect.InvalidObject:
+        :raise spruce.introspect.InvalidObject:
             Raised if this object is not a module and has no parent module.
 
         """
@@ -206,7 +206,7 @@ class Object(object):
         :raise ImportError:
             Raised if this object is a module but cannot be imported.
 
-        :raise nisavid.introspect.InvalidObject:
+        :raise spruce.introspect.InvalidObject:
             Raised if this object is not a module and has no parent module.
 
         """
@@ -225,7 +225,7 @@ class Object(object):
         :raise ImportError:
             Raised if this object is a module but cannot be imported.
 
-        :raise nisavid.introspect.InvalidObject:
+        :raise spruce.introspect.InvalidObject:
             Raised if this object is not a module and has no parent module.
 
         """
@@ -246,7 +246,7 @@ class Object(object):
         :raise ImportError:
             Raised if this object is a module but cannot be imported.
 
-        :raise nisavid.introspect.InvalidObject:
+        :raise spruce.introspect.InvalidObject:
             Raised if this object is not a module and has no parent module.
 
         """
@@ -332,7 +332,7 @@ class Object(object):
         :raise ImportError:
             Raised if this object is a module but cannot be imported.
 
-        :raise nisavid.introspect.InvalidObject:
+        :raise spruce.introspect.InvalidObject:
             Raised if this object is not a module and has no parent module.
 
         """
@@ -454,7 +454,7 @@ class Object(object):
             Raised if either this object or the specified attribute is a module
             but cannot be imported.
 
-        :raise nisavid.introspect.InvalidObject:
+        :raise spruce.introspect.InvalidObject:
             Raised if this object is not a module and has no parent module.
 
         """
@@ -489,7 +489,7 @@ class Object(object):
         :raise ImportError:
             Raised if this object is a module but cannot be imported.
 
-        :raise nisavid.introspect.InvalidObject:
+        :raise spruce.introspect.InvalidObject:
             Raised if this object is not a module and has no parent module.
 
         .. note:: **TODO:**
@@ -539,7 +539,7 @@ class Object(object):
         :raise ImportError:
             Raised if this object is a module but cannot be imported.
 
-        :raise nisavid.introspect.InvalidObject:
+        :raise spruce.introspect.InvalidObject:
             Raised if this object is not a module and has no parent module.
 
         """

@@ -1,6 +1,6 @@
+#################
+Spruce-introspect
+#################
 
-#####################
-nisavid-introspection
-#####################
-
-Reflection tools for inspecting Python objects and code.
+Spruce-introspect is a Python library for inspecting Python objects and
+code.

@@ -81,14 +81,14 @@ def module_from_object(object):
 
     If specified by the *object*, this respects the
     :attr:`Object.load_tree_filepath
-    <nisavid.introspect._objects.Object.load_tree_filepath>` and
+    <spruce.introspect._objects.Object.load_tree_filepath>` and
     :attr:`Object.load_fallback_outoftree
-    <nisavid.introspect._objects.Object.load_fallback_outoftree>`
+    <spruce.introspect._objects.Object.load_fallback_outoftree>`
     settings.
 
     :param object:
         An object.
-    :type object: :class:`~nisavid.introspect._objects.Object`
+    :type object: :class:`~spruce.introspect._objects.Object`
 
     :rtype: :class:`Module`
 
@@ -229,7 +229,7 @@ def module_path_toabs(path, currentmodule):
 
     :rtype: :obj:`str`
 
-    :raise nisavid.introspect.InconsistentStructure:
+    :raise spruce.introspect.InconsistentStructure:
         Raised if *path* is relative but *currentmodule* is not a package
         and has no parent package.
 
@@ -400,7 +400,7 @@ class Module(_intro_objects.Object):
 
         :type: ~[:class:`Module`]
 
-        :raise nisavid.introspect.InconsistentStructure:
+        :raise spruce.introspect.InconsistentStructure:
             Raised if any of the included modules is imported using a relative
             import, but this module is not a package and is not contained in
             one.
@@ -433,7 +433,7 @@ class Module(_intro_objects.Object):
 
         :rtype: [:obj:`str`]
 
-        :raise nisavid.introspect.InconsistentStructure:
+        :raise spruce.introspect.InconsistentStructure:
             Raised if any of the included modules is imported using a relative
             import, but this module is not a package and is not contained in
             one.
@@ -612,7 +612,7 @@ class Package(Module):
                         include_private=False, excluded_names=None):
         """The :term:`names <module name>` of the modules in this package.
 
-        .. seealso:: :func:`~nisavid.introspect._paths.top_module_names`.
+        .. seealso:: :func:`~spruce.introspect._paths.top_module_names`.
 
         :rtype: [:obj:`str`]
 
@@ -642,7 +642,7 @@ class Package(Module):
             Module names that that should be excluded.
         :type excluded_names: [:obj:`str`] or null
 
-        :rtype: [:class:`~nisavid.introspect._modules.Module`]
+        :rtype: [:class:`~spruce.introspect._modules.Module`]
 
         """
         return top_modules(self.dirpath, include_init=include_init,
@@ -654,7 +654,7 @@ class Package(Module):
         """The names of the packages at the top level of some directory.
 
         This is a convenience wrapper for :func:`top_package_names()
-        <nisavid.introspect._path.top_package_names>`.
+        <spruce.introspect._path.top_package_names>`.
 
         :param bool include_private:
             Whether to include private packages.

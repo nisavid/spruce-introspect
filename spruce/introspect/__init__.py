@@ -88,13 +88,13 @@ This module uses the following terminology:
         component of the package's :term:`path <package path>`.  It is
         also the package's :term:`directory name`.
 
-        Example: The name of :mod:`nisavid.introspect` is
+        Example: The name of :mod:`spruce.introspect` is
         :mod:`!introspection`.
 
     package path
         A path that can be used to reference a package in Python.
 
-        Example: :mod:`!nisavid.introspect`
+        Example: :mod:`!spruce.introspect`
 
     parent module
         The module within whose namespace a named object is defined.
