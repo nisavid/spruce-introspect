@@ -116,7 +116,7 @@ This module uses the following terminology:
 
 """
 
-__copyright__ = "Copyright (C) 2013 Ivan D Vasin and Cogo Labs"
+__copyright__ = "Copyright (C) 2014 Ivan D Vasin"
 __credits__ = ["Ivan D Vasin"]
 __maintainer__ = "Ivan D Vasin"
 __email__ = "nisavid@gmail.com"
